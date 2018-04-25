@@ -177,7 +177,6 @@ pre, code {
   overflow: hidden;
 }
 .list-header,
-.first-entry > *,
 .post-entry,
 .list-footer {
   max-width: 700px;
@@ -213,7 +212,6 @@ pre, code {
     min-height: calc(100vh - 155px);
   }
   .list-header,
-  .first-entry > *,
   .post-entry,
   .list-footer,
   .post-view {
@@ -241,29 +239,9 @@ pre, code {
   font-size: 15px;
   letter-spacing: .5px;
 }
-/* First entry */
-.first-entry {
-  position: relative;
-  margin-bottom: 40px;
-  padding-top: 60px;
-  padding-bottom: 120px;
-  background: #fff;
-}
-.welcome-emoji {
-  font-size: 50px;
-  line-height: 1;
-}
-.first-entry .post-title {
-  font-size: 50px;
-}
 .post-summary {
   margin-top: 10px;
   color: rgba(0, 0, 0, .4);
-}
-@media (max-width: 767px) {
-  .first-entry {
-    margin-bottom: 25px;
-  }
 }
 /* Post entry */
 .post-entry {
