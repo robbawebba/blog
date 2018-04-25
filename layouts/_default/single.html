@@ -5,7 +5,7 @@
     <p class="post-meta">
       {{- if or .Params.author .Site.Params.author -}}
       {{ .Params.author | default .Site.Params.author }} · {{ end }}
-      {{- .Date.Format "January 2nd, 2006" -}}
+      {{- .Date.Format "January 2, 2006" -}}
     </p>
   </header>
   <div class="post-content">{{ .Content }}</div>
