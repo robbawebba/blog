@@ -25,6 +25,7 @@
   <!-- Styles -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
   <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <link href="/css/style.css" rel="stylesheet">
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
@@ -40,6 +41,17 @@
     <h1 class="title"><a href="{{ `/` }}">{{ .Site.Title }}</a></h1>
     {{ else }}
     <p class="title"><a href="{{ `/` }}">{{ .Site.Title }}</a></p>
+    {{ end }}
+    {{ if .Site.Params.rss }}
+      {{ if .RSSLink }}
+      <a href="{{ .RSSLink }}" title="RSS">
+      {{ else }}
+      <a href="{{ .Site.RSSLink }}" title="RSS">
+      {{ end }}
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-rss fa-stack-1x"></i>
+        </span>
+      </a>
     {{ end }}
   </header>
   <main class="main">
