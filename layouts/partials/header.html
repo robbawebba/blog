@@ -33,7 +33,7 @@
   <!-- Generator -->
   <meta name="generator" content="Hugo {{ .Hugo.Version }}">
   <!-- RSS -->
-  <link rel="alternate" type="application/atom+xml" href="/index.xml" title="{{ .Site.Title }}">
+  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="{{ .Site.Title }}">
 </head>
 <body class="{{if eq .Kind `page` }}single{{else}}list{{end}}">
   <header class="header">
@@ -44,9 +44,9 @@
     {{ end }}
     {{ if .Site.Params.rss }}
       {{ if .RSSLink }}
-      <a href="{{ .RSSLink }}" title="RSS">
+      <a href="{{ .RSSLink }}" title="RSS" data-no-instant>
       {{ else }}
-      <a href="{{ .Site.RSSLink }}" title="RSS">
+      <a href="{{ .Site.RSSLink }}" title="RSS" data-no-instant>
       {{ end }}
         <span class="fa-stack fa-lg">
           <i class="fa fa-rss fa-stack-1x"></i>
