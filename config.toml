@@ -1,6 +1,8 @@
 baseURL = "https://robbawebba.github.io"
 languageCode = "en-us"
 title = "Rob Weber"
+pygmentsCodefences = true
+pygmentsStyle = "solarized-dark"
 
 [params]
   rss = true
